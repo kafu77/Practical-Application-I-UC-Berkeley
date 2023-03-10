@@ -1,10 +1,8 @@
 # Project1_Repository
 
-In this project I try to make a decision to know with the help of machine learning whether the coupons sent by Amazon are accepted or not by the drivers.
+The goal of the project is to use machine learning to predict whether drivers will accept the coupons sent by Amazon. 
 
-First I did the number of rows and columns check up and grab a summary of the dataset we have given. The dataset has 12684 entries and 26 columns. Then, I have checked
-all missing values and other special characters that are problematic for the machine. From the total survey, the "Car" column has 12576 missing values. More than 99% are missing values. Since this column has a huge number of missing values, it is quite hard to fill it and give it to the machine. probably,our result will be affected by this decision. So,I decided to drop the column.
-
+Dropping the "Car" column was a good decision since it had a huge number of missing values. Imputing missing values could have led to biased results and inaccurate predictions. By dropping the column, you ensured that the remaining data is clean and can be used for further analysis. It is always important to check for missing values and other inconsistencies in the dataset before performing any analysis to ensure accurate results.
 For the other columns such as Bar,coffeeHouse,CarryAway,RestaurantLessThan20,Restaurant20To50, since each column has below 2% missing values, I fill it with the missing values which have the highest counts for each coupon.
 
 After I cleaned up all the missing datas, I calculated the total numbers of coupons accepted by the drivers. Out of the total number of coupons from this survey, 7210 coupons are accepted. This is 56.84%. Still there is a good indication for amazon about the coupons they have sent. Then, I did some graphical representation, to visualize more details about the datas.
